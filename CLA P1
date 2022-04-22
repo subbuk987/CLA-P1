@@ -1,8 +1,28 @@
 #include <stdio.h>
 int main(){
-int a,b;
-a=10;
-b=20;
-printf("%d",a+b);
+int operation;
+//This Project is to create a Simple Calculator. Created by kk8340@srmist.edu.in
+printf("Enter 1 for addition\nEnter 2 for Multiplication\nEnter 3 for Subraction\nEnter any other number for Division");
+scanf("%d",&operation);
+if (operation==1){
+   int a,b;
+   scanf("%d\n%d",&a,&b);
+   printf("Sum=%d",(a+b));
+   }
+else if(operation==2){
+   int a,b;
+   scanf("%d\n%d",&a,&b);
+   printf("Multiplication=%d",(a*b));
+   }
+else if(operation==3){
+   int a,b;
+   scanf("%d\n%d",&a,&b);
+   printf("Subtraction=%d",(a-b));
+   }
+else{
+   int a,b;
+   scanf("%d\n%d",&a,&b);
+   printf("Division=%d",(a/b));
+   }
 return 0;
 }
